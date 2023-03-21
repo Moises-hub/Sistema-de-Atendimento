@@ -1,0 +1,96 @@
+object Frm_Observacao: TFrm_Observacao
+  Left = 0
+  Top = 0
+  BorderStyle = bsToolWindow
+  Caption = 'Detalhe no Atendimento'
+  ClientHeight = 364
+  ClientWidth = 464
+  Color = clBtnHighlight
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RzPanel1: TRzPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 458
+    Height = 41
+    Align = alTop
+    BorderOuter = fsNone
+    Caption = 'Detalhe'
+    Color = clSilver
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    VisualStyle = vsGradient
+  end
+  object RzPanel2: TRzPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 336
+    Width = 458
+    Height = 25
+    Align = alBottom
+    BorderOuter = fsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    Transparent = True
+    object Button1: TButton
+      Left = 392
+      Top = 0
+      Width = 66
+      Height = 25
+      Align = alRight
+      Caption = 'Ok'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+  end
+  object DBMemo1: TDBMemo
+    AlignWithMargins = True
+    Left = 3
+    Top = 50
+    Width = 458
+    Height = 280
+    Align = alClient
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    BevelKind = bkSoft
+    BorderStyle = bsNone
+    DataField = 'DETALHE'
+    DataSource = DM.DS_Query_Historico
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object ActionList1: TActionList
+    Left = 312
+    Top = 192
+    object Action1: TAction
+      Caption = 'Action1'
+      ShortCut = 27
+    end
+  end
+end

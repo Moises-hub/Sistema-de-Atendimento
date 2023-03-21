@@ -1,0 +1,92 @@
+object Frm_Org_ADDNota: TFrm_Org_ADDNota
+  Left = 0
+  Top = 0
+  BorderStyle = bsToolWindow
+  ClientHeight = 386
+  ClientWidth = 627
+  Color = clGray
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClick = FormClick
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RzPanel1: TRzPanel
+    Left = 0
+    Top = 345
+    Width = 627
+    Height = 41
+    Align = alBottom
+    BorderOuter = fsNone
+    Color = 2631720
+    GradientColorStyle = gcsCustom
+    GradientColorStart = 5263440
+    GradientColorStop = clActiveBorder
+    TabOrder = 0
+    OnClick = FormClick
+    object SpeedButton1: TSpeedButton
+      Left = 16
+      Top = 7
+      Width = 105
+      Height = 22
+      Cursor = crHandPoint
+      Caption = 'Marcar Usu'#225'rio'
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clHighlightText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = SpeedButton1Click
+    end
+    object RzBitBtn1: TRzBitBtn
+      AlignWithMargins = True
+      Left = 468
+      Top = 5
+      Height = 31
+      Cursor = crHandPoint
+      Margins.Top = 5
+      Margins.Bottom = 5
+      Align = alRight
+      Color = clSilver
+      HotTrack = True
+      TabOrder = 0
+      ThemeAware = False
+      OnClick = RzBitBtn1Click
+      Kind = bkOK
+    end
+    object RzBitBtn2: TRzBitBtn
+      AlignWithMargins = True
+      Left = 549
+      Top = 5
+      Height = 31
+      Cursor = crHandPoint
+      Margins.Top = 5
+      Margins.Bottom = 5
+      Align = alRight
+      Color = clSilver
+      HotTrack = True
+      TabOrder = 1
+      ThemeAware = False
+      OnClick = RzBitBtn2Click
+      Kind = bkCancel
+    end
+  end
+  object cxRichEdit1: TcxRichEdit
+    Left = 0
+    Top = 0
+    Align = alClient
+    Lines.Strings = (
+      'cxRichEdit1')
+    TabOrder = 1
+    ExplicitLeft = 104
+    ExplicitTop = 112
+    Height = 345
+    Width = 627
+  end
+end
